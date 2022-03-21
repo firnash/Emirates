@@ -1,0 +1,34 @@
+.airport-filter {
+  position: relative;
+  &-dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    width: 100%;
+    z-index: 10;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: auto;
+  }
+  &-list {
+    display: flex;
+    &:hover {
+      background-color: #d6d6d6;
+    }
+  }
+  &-item {
+    padding: 10px 15px;
+    &-code {
+      font-weight: 700;
+      background: #c9ebec;
+      padding: 0.5rem 0.5rem;
+      border-radius: .3rem;
+      width: 41px;
+      text-align: center;
+    }
+  }
+  &-airport {
+    font-size: 0.7rem;
+  }
+}

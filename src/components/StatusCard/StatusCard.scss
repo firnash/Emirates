@@ -1,0 +1,77 @@
+.status-card {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .11);
+  position: relative;
+  margin-bottom: 25px;
+
+  &-column {
+    border-right: 0;
+  }
+
+  &-progress {
+    padding: 0 60px;
+
+    &-icon {
+      position: relative;
+      z-index: 9;
+      display: inline-block;
+      width: 100%;
+      height: 60px;
+
+      &-arrived {
+        svg {
+          right: -10px;
+          left: revert !important;
+        }
+      }
+      svg {
+        transform: rotate(90deg);
+        font-size: 2rem;
+        color: #15700e;
+        position: absolute;
+        left: -15px;
+        top: -15px;
+      }
+    }
+
+    &-line {
+      position: relative;
+      height: 2px;
+      background-color: #15700e;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: green;
+        border-radius: 50%;
+        top: -3px;
+      }
+  
+      &:after {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: green;
+        border-radius: 50%;
+        top: -3px;
+        right: 0;
+      }
+    }
+  }
+
+  &-number {
+    display: inline-block;
+    padding-left: 15px;
+  }
+
+  @media only screen and (min-width: 992px) {    
+    &-column {
+      border-right: 1px dashed #d8d8d8;
+    }
+  }
+}
