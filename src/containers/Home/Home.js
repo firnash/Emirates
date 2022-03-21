@@ -94,7 +94,14 @@ export default function Home() {
               :
               status
 
-              return <StatusCard statusCode={statusCode} key={i} departure={depCity} arrival={arrivalCity} flight={flights} flightRoute={flightRoute} />
+              return <StatusCard 
+                        statusCode={statusCode} 
+                        key={i} 
+                        departure={depCity} 
+                        arrival={arrivalCity} 
+                        flight={flights} 
+                        flightRoute={flightRoute} 
+                      />
             }) 
             : 
             isLoading ? <></> :

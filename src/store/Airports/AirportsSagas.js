@@ -7,7 +7,6 @@ import * as TYPES from "./AirportsTypes";
 export function* sagasRequestAirports() {
   try {
     const response = yield call(API.apiAirportListRequest);
-    console.log('response in saga: ', response.data);
     yield put(ACTIONS.actionReceive(response.data));
   } catch (err) {
     alert(err);

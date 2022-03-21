@@ -11,12 +11,10 @@ export function* sagasRequestFlightStatus(data) {
     let response = null
     if (data && data.data) {
       response = yield call(API.apiFlightStatustRequest, data.data);
-    } 
-    console.log('response flight status in saga: ', response);
+    }
     yield put(LoaderActions.loader(false));
     yield put(ACTIONS.actionStatusReceive(response.data));
   } catch (err) {
-    console.log('errrrr saga: ', err);
     alert(err);
   }
 }
