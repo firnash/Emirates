@@ -64,13 +64,33 @@ export default function Home() {
     <div className="container">
       <div className="row filter-row p-2 mb-3">
         <div className="col-12 col-md-3">  
-          <AirportFilter helperText={'Please Choose an Origin'} error={isDepartureError} selectedAirport={getDepartureAirport} data={airports} label='Departure Airport' name='departure' />
+          <AirportFilter 
+            helperText={'Please Choose an Origin'} 
+            error={isDepartureError} 
+            selectedAirport={getDepartureAirport} 
+            data={airports} 
+            label='Departure Airport' 
+            name='departure' 
+          />
         </div>
         <div className="col-12 col-md-3">
-          <AirportFilter helperText={'Please Choose a Destination'} error={isArrivalError} selectedAirport={getArrivalAirport} data={airports} label='Arrival Airport' name='arrival' />
+          <AirportFilter 
+            helperText={'Please Choose a Destination'} 
+            error={isArrivalError} 
+            selectedAirport={getArrivalAirport} 
+            data={airports} 
+            label='Arrival Airport' 
+            name='arrival' 
+          />
         </div>
         <div className="col-12 col-md-3">
-          <InputField handleChange={dateHandler} value={date} label='Departing' name='date' isDate={true} />
+          <InputField 
+            handleChange={dateHandler} 
+            value={date} 
+            label='Departing' 
+            name='date' 
+            isDate={true} 
+          />
         </div>
         <div className="col-12 col-md-3 align-self-center">
           <Btn text='View Details' handleClick={getStatus}  />

@@ -10,6 +10,7 @@ export const AirportFilter = ({ label, name, data, selectedAirport, error, helpe
 
   const [inputText, setInputText] = useState("");
   const [isShowList, setShowList] = useState(false);
+  
   let inputHandler = (e) => {
     var lowerCase = e.target.value.toLowerCase();
     setInputText(lowerCase);
