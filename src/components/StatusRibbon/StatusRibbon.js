@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import './StatusRibbon.scss';
 
 export const StatusRibbon = ({text}) => {

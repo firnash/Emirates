@@ -19,7 +19,7 @@ export const InputField = ({
   return (
     <TextField
       className="my-3"
-      autoComplete='chrome-off'
+      autoComplete='off'
       name={name}
       type={isDate ? 'date' : 'text'}
       label={isRequired ? label+"*" : label}

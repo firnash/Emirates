@@ -1,5 +1,5 @@
 // import { FeatureSaga1 } from '../Feature1/FeatureSagas';
-import { fork, all } from "redux-saga/effects";
+import { all } from "redux-saga/effects";
 import { AirportSaga } from "../Airports/AirportsSagas";
 import { FlightStatusSaga } from "../FlightStatus/FlightStatusSagas";
 

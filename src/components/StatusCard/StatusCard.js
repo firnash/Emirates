@@ -62,7 +62,7 @@ export const StatusCard = ({flight, flightRoute, departure, arrival, statusCode}
           </div>
         </div>
         <div className="col-12 col-md-3 align-self-center text-center">
-          <img src={ekFlag} style={{width: '31px'}} />
+          <img alt="emiratesFlag" src={ekFlag} style={{width: '31px'}} />
           <h5 className="status-card-number">{flight.airlineDesignator} {flight.flightNumber}</h5>
         </div>
       </div>
